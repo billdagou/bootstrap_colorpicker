@@ -12,13 +12,11 @@ You can load the libraries in your Fluid template easily.
 
 You can also load your own libraries.
 
-    <bscp:loadCss css="..." />
-    <bscp:loadJs js="..." />
-    
-Or, load the javascript library on top.
+    <bscp:loadCss href="..." />
+    <bscp:loadJs src="..." />
 
-    <bscp:loadJs footer="false" />
-    
-To use the CDN resource, please set `$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['bootstrap_colorpicker']['CDN']` in `ext_localconf.php` or `AdditionalConfiguration.php`.
+For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
 
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['bootstrap_colorpicker']['CDN'] = \Vender\Extension\CDN\Provider::class;
+To use other Bootstrap Colorpicker source, you can register it in `ext_localconf.php` or `AdditionalConfiguration.php`.
+
+    \Dagou\BootstrapColorpicker\Utility\ExtensionUtility::registerSource(\Vendor\Extension\Source::class);
