@@ -7,13 +7,13 @@ EXT:bootstrap_colorpicker allows you to use [Bootstrap Colorpicker](https://itsj
 ## How to use it
 You can load the libraries in your Fluid template easily.
 
-    <bscp:loadCss />
-    <bscp:loadJs />
+    <bscp:css />
+    <bscp:js />
 
 You can also load your own libraries.
 
-    <bscp:loadCss href="..." />
-    <bscp:loadJs src="..." />
+    <bscp:css href="..." />
+    <bscp:js src="..." />
 
 For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
 
