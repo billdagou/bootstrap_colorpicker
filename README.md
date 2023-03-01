@@ -10,7 +10,7 @@ You can load the libraries in your Fluid template easily.
     <bscp:css />
     <bscp:js />
 
-You can also load your own libraries.
+Or load your own libraries.
 
     <bscp:css href="..." />
     <bscp:js src="..." />

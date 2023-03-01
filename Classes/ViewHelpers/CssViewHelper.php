@@ -24,7 +24,7 @@ class CssViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Asset\CssViewHelper {
      */
     public function render(): string {
         if (!$this->arguments['href']) {
-            if (($className = ExtensionUtility::getSource()) && is_subclass_of($className, Source::class) ) {
+            if (is_subclass_of(($className = ExtensionUtility::getSource()), Source::class)) {
                 $source = GeneralUtility::makeInstance($className);
             } else {
                 $source = GeneralUtility::makeInstance(Local::class);

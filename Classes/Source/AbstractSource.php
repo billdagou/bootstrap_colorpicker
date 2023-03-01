@@ -5,7 +5,8 @@ use Dagou\BootstrapColorpicker\Interfaces\Source;
 use TYPO3\CMS\Core\SingletonInterface;
 
 abstract class AbstractSource implements Source, SingletonInterface {
-    const URL = '';
+    protected const URL = '';
+    protected const VERSION = '3.2.0';
 
     /**
      * @return string

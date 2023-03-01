@@ -2,8 +2,6 @@
 namespace Dagou\BootstrapColorpicker\Interfaces;
 
 interface Source {
-    const VERSION = '3.2.0';
-
     /**
      * @return string
      */
