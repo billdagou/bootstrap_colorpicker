@@ -2,20 +2,13 @@
 
 EXT:bootstrap_colorpicker allows you to use [Bootstrap Colorpicker](https://itsjavi.com/bootstrap-colorpicker/) in your extensions.
 
-**The extension version only matches the Bootstrap library version, it doesn't mean anything else.**
+**The extension version only matches the Bootstrap Colorpicker library version, it doesn't mean anything else.**
 
 ## How to use it
 You can load the libraries in your Fluid template easily.
 
-    <bscp:css />
-    <bscp:js />
-
-Or load your own libraries.
-
-    <bscp:css href="..." />
-    <bscp:js src="..." />
-
-For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
+    <f:asset.css identifier="bootstrap_colorpicker" href="{bscp:uri.css()}" />
+    <f:asset.script identifier="bootstrap_colorpicker" src="{bscp:uri.js()}" />
 
 To use other Bootstrap Colorpicker source, you can register it in `ext_localconf.php` or `AdditionalConfiguration.php`.
 
